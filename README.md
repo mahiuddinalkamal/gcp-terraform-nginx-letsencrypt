@@ -9,7 +9,7 @@ Steps to perform:
 
 3. Now, to provision a GCP VM using Terraform, run "**./script apply**". This will create VM with all the needed resources along with it. Then it will run a "**startupscript.sh**" automatically after the VM has been provisioned. This statscript will install **NGINX, Certbot(for LetsEncrypt)** into the VM and will create SSL certificate for a particular domain. I already have a custom domain "**dev.codezonebd.com**". So, I have used mine. If you wish to change it to your own domain please do so. Then, the script will tune NGINX so that it can have 10K concurrent request at any time.
 
-4. Finally, in order to destroy the GCP Infrastructure run "./script destroy". This will trigger Terraform to destroy the whole infrastructure. Use this option with caution.
+4. Finally, in order to destroy the GCP Infrastructure run "**./script destroy**". This will trigger Terraform to destroy the whole infrastructure. Use this option with caution as it will not ask your confirmation.
 
 **The VM can be reached at: https://dev.codezonebd.com**
 
