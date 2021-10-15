@@ -15,10 +15,10 @@ if [ "$1" == "" ]; then
 	exit
 fi
 
-PROJECT_NAME="coding-test-mak-final"
-SERVICE_AC="coding-test-service-ac"
+PROJECT_NAME=""
+SERVICE_AC=""
 IAM_AC="$SERVICE_AC"@"$PROJECT_NAME".iam.gserviceaccount.com
-BILLING_AC=0171E9-D99FF5-BAC6FA # change here according to your billing account number
+BILLING_AC= # change here according to your billing account number
 
 if [ "$1" == "create" ]; then
 
